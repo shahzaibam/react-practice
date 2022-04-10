@@ -1,10 +1,10 @@
 import React from 'react'
 import '../App.css'
-import { activities } from './activities';
+// import activities from './activities'
 
 const Content = (props) => {
 
-    const activities = props;
+    const {activities} = props;
 
     return (
 
