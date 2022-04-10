@@ -6,3 +6,18 @@
   height: 50px;
   font-size: 24px;
 }
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 10px 100px 10px 10px;
+}
+
+.info {
+  padding-top: 30px;
+}
+
+.avatarimg{
+  margin-top: 20px;
+}
