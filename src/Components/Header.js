@@ -7,7 +7,7 @@ const Header = (props) => {
 
             <div className="navbar">
                 <div className="icon">
-                    Hamburger Menu
+                    <i class="fa-solid fa-bars"></i>
                 </div>
 
                 <div className="title">
@@ -15,7 +15,7 @@ const Header = (props) => {
                 </div>
 
                 <div className="searchbtn">
-                    Search
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
 
             </div>
