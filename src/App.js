@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
     <Header />
-    <Content activities={}/>
+    <Content activities={actividades}/>
     
     </div>
   );
