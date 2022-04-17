@@ -7,6 +7,9 @@ function App() {
     <div>
     <Header />
     <Content activities={actividades}/>
+    <Content activities={actividades}/>
+    <Content activities={actividades}/>
+    <Content activities={actividades}/>
     
     </div>
   );
