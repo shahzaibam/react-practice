@@ -11,6 +11,10 @@ class Clock extends React.Component {
         this.setTimer();
     }
 
+    setTimer() {
+        clearTimeout(this.timeOut);
+        this.timeOut = setTimeout(this.updateClock.bind(this), 1000);
+    }
 
 
     getTime() {
