@@ -7,6 +7,12 @@ class Clock extends React.Component {
         this.state = this.getTime();
     }
 
+    componentDidMount() {
+        this.setTimer();
+    }
+
+
+
     getTime() {
         const currentTime = new Date();
         return {
@@ -24,11 +30,13 @@ class Clock extends React.Component {
         return (
             <div className='clock'>
 
-                {hours == 24 ? 0 : (hours > 12) ? hours : hours - 12}
+                {hours == 0 ? 12 : (hours > 12) ? hours - 12 : hours}
                 :
                 {minutes > 9 ? minutes : `0${minutes}`}
                 :
                 {seconds > 9 ? seconds : `0${seconds}`}
+
+                {ampm}
 
 
             </div>
