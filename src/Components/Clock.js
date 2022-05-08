@@ -35,7 +35,7 @@ class Clock extends React.Component {
     render() {
         const {hours, minutes, seconds, ampm} = this.state
         return (
-            <div className='clock' style={{backgroundColor: "blue", color: "white", width: "8%", fontSize: "24px", }}>
+            <div className='clock' style={{backgroundColor: "blue", color: "white", width: "8%", fontSize: "24px", textAlign: "center"}}>
 
                 {hours == 24 ? 0 : (hours > 12) ? hours : hours - 12}
                 :
