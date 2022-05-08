@@ -26,7 +26,7 @@ class Clock extends React.Component {
             hours: currentTime.getHours(),
             minutes: currentTime.getMinutes(),
             seconds: currentTime.getSeconds(),
-            ampm: currentTime.hours >= 12 ? "pm" : "am"
+            ampm: currentTime.hours >= 12 ? "am" : "pm"
 
         }
     }
@@ -35,9 +35,9 @@ class Clock extends React.Component {
     render() {
         const {hours, minutes, seconds, ampm} = this.state
         return (
-            <div className='clock'>
+            <div className='clock' style={{backgroundColor: "blue", color: "white", width: "100px"  }}>
 
-                {hours == 0 ? 12 : (hours > 12) ? hours - 12 : hours}
+                {hours == 24 ? 0 : (hours > 12) ? hours : hours - 12}
                 :
                 {minutes > 9 ? minutes : `0${minutes}`}
                 :
